@@ -1,4 +1,4 @@
-package com.sam.javaPracticeProblems;
+package com.sam.javaPracticeProblemsCode1;
 
 import java.util.Scanner;
 
