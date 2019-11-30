@@ -30,8 +30,8 @@ public class StringAnagram {
 
 	// Method 2
 	private static String anagramCheck2(String string1, String string2) {
-		char[] charFromString1 = string1.toCharArray();
-		StringBuilder string2Stringbuilder = new StringBuilder(string2);
+		char[] charFromString1 = string1.toLowerCase().toCharArray();
+		StringBuilder string2Stringbuilder = new StringBuilder(string2.toLowerCase());
 		for (char ch : charFromString1) {
 			int index = string2Stringbuilder.indexOf("" + ch);
 			if (index != -1) {
