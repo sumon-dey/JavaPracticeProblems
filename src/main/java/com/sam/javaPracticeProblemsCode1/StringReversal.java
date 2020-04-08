@@ -11,6 +11,7 @@ public class StringReversal {
 		String originalString = scanner.nextLine();
 		System.out.println(reverseString1(originalString));
 		System.out.println(reverseString2(originalString));
+		System.out.println(reverseString3(originalString));
 	}
 
 	// 1st way
@@ -27,6 +28,15 @@ public class StringReversal {
 	private static String reverseString2(String originalString) {
 		StringBuilder stringBuilder = new StringBuilder(originalString);
 		return stringBuilder.reverse().toString();
+	}
+
+	// 3rd way
+	private static String reverseString3(String originalString) {
+		String reversedString = "";
+		for (int i = originalString.length() - 1; i >= 0; i--) {
+			reversedString += originalString.charAt(i);
+		}
+		return reversedString;
 	}
 
 }
