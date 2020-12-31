@@ -18,6 +18,8 @@ public class StringReversal {
 		way4(originalString);
 		way5(originalString);
 		way6(originalString);
+		System.out.print("After the string is reversed, the output is: ");
+		way7(originalString);
 	}
 
 	public static void way1(String originalString) {
@@ -75,6 +77,15 @@ public class StringReversal {
 			reversedString += c;
 		}
 		System.out.println("After the string is reversed, the output is: " + reversedString);
+	}
+
+	public static void way7(String str) {
+		if (str == null || str.length() <= 1) {
+			System.out.println(str);
+		} else {
+			System.out.print(str.charAt(str.length() - 1));
+			way7(str.substring(0, str.length() - 1));
+		}
 	}
 
 }
