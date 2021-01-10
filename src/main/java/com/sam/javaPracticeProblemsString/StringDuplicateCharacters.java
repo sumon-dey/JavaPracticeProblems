@@ -3,11 +3,14 @@ package com.sam.javaPracticeProblemsString;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 public class StringDuplicateCharacters {
 
 	public static void main(String[] args) {
-		String str = "Hello World";
+		System.out.println("Enter the String: ");
+		Scanner scanner = new Scanner(System.in);
+		String str = scanner.nextLine();
 		printDuplicateCharactersWay1(str);
 		System.out.println("************************************************");
 		printDuplicateCharactersWay2(str);
