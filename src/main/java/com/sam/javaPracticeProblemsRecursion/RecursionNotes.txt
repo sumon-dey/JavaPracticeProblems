@@ -1,0 +1,7 @@
+Basic properties of Recursion problems:
+
+1) Same operation performed multiple times with different inputs
+
+2) In every iteration, try to make the problem smaller.
+
+3) It is mandatory to have a base condition which tells the system when to stop the recursion.
